@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Pick type of animal" icon-name="standard:user">
+        <lightning-layout horizontal-align="center">
+            <lightning-layout-item padding="horizontal-small">
+                    <lightning-combobox name="Type" label="Type"
+                        options={animalTypes} onchange={handleTypeChange}>
+                    </lightning-combobox>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
