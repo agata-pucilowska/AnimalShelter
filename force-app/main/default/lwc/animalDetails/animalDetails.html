@@ -1,0 +1,17 @@
+<template>
+    <template if:true={isAnimal}>
+    <div style="background-color: white;">
+        <lightning-tabset>
+            <lightning-tab label="Animal Details">
+                <c-animal-detail animal={animal}></c-animal-detail>
+            </lightning-tab>
+            <!-- <lightning-tab label="Item Two" title="2nd tab extended title">
+                Two Content !
+            </lightning-tab>
+            <lightning-tab label="Item Three">
+                Three Content !
+            </lightning-tab> -->
+        </lightning-tabset>
+    </div>
+    </template>
+</template>

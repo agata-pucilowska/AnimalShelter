@@ -1,0 +1,12 @@
+.label {
+    font-weight: bold;
+    display: block;
+  }
+  
+.animalinfor {
+    margin-bottom: 3px;
+  }
+
+.animal{
+    border-radius: 5px;
+  }

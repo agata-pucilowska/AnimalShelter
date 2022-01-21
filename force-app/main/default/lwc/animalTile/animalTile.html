@@ -1,10 +1,12 @@
 <template>
-    <div class="tile">
-    <img src={animal.Pickture_Url__c} class="animal slds-align_absolute-center"/>
-    <div>
-        <p class="title slds-align_absolute-center">
-            {animal.Name__c}
-        </p>
-    </div>
-</div>
+    <a onclick={handleSelect}>
+        <div class={isSelected} >
+            <img src={animal.Pickture_Url__c} class="animal slds-align_absolute-center"/>
+            <div>
+                <p class="title slds-align_absolute-center">
+                    {animal.Name__c}
+                </p>
+            </div>
+        </div>
+    </a>
 </template>

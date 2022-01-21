@@ -9,6 +9,8 @@ export default class AnimalList extends LightningElement {
     animals;
     error;
 
+    animalId;
+
     @wire(getAllActiveAnimals)
     allAnimals({data,error}){
         if(data){
@@ -27,6 +29,10 @@ export default class AnimalList extends LightningElement {
         else if(error){
             this.error = error;
         }
+    }
+
+    handleSelectedAnimal(event){
+        this.animalId = event.detail;
     }
 
 }

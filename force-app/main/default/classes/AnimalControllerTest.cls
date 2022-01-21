@@ -15,13 +15,17 @@ public with sharing class AnimalControllerTest {
 
     @isTest
     private static void testGetAllAnimals(){
+        test.startTest();
         List<Animal__c> allAnimals = AnimalController.getAllActiveAnimals();
+        test.stopTest();
         System.assertEquals(6, allAnimals.size(),'Error');
     }
 
     @isTest
     private static void testGetAllAnimalsByType(){
+        test.startTest();
         List<Animal__c> dogs = AnimalController.getAnimalsByType('Dog');
+        test.stopTest();
         System.assertEquals(3, dogs.size(),'Error');
     }
 

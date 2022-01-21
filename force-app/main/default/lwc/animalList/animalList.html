@@ -2,9 +2,8 @@
     <lightning-layout multiple-rows horizontal-align="center">
         <template if:true={animals}>
             <template for:each={animals} for:item="animal">
-                <lightning-layout-item key={animal.Id} padding="around-small" size="12" small-device-size="6"
-                    large-device-size="3" medium-device-size="4">
-                    <c-animal-tile animal={animal}></c-animal-tile>
+                <lightning-layout-item key={animal.Id} padding="around-small" size="12" small-device-size="6" large-device-size="3" medium-device-size="4">
+                    <c-animal-tile animal={animal} onselected={handleSelectedAnimal} animal-id={animalId}></c-animal-tile>
                 </lightning-layout-item>
             </template>
         </template>
